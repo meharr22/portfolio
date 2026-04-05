@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import Index from './pages/Index';
 import AuthCallback from './pages/AuthCallback';
 import AuthError from './pages/AuthError';
+import CustomCursor from "./components/CustomCursor";
 // MODULE_IMPORTS_START
 // MODULE_IMPORTS_END
 
@@ -16,6 +17,7 @@ const App = () => (
     {/* MODULE_PROVIDERS_START */}
     {/* MODULE_PROVIDERS_END */}
     <ThemeProvider>
+      <CustomCursor />
       <TooltipProvider>
         <Toaster />
         <BrowserRouter>
