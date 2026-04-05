@@ -10,8 +10,8 @@ import {
   Github,
 } from "lucide-react";
 
-const AI_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1075346/2026-03-31/c3fa4a6a-e958-4363-a375-eddff9422923.png";
-const CODE_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1075346/2026-03-31/7aa47ae3-2ddc-4a1e-b223-dd3c903c157d.png";
+const AI_IMG = "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070&auto=format&fit=crop";
+const CODE_IMG = "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=2070&auto=format&fit=crop";
 
 interface Project {
   title: string;
