@@ -308,7 +308,7 @@ export default function ProjectsSection() {
 </div>
 
             <p className="text-xs mt-6">
-              © 2026 Mehar Arora
+              © 2026 Mehar Aroraa
             </p>
           </div>
         </ScrollFadeIn>
