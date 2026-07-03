@@ -14,8 +14,8 @@ export default function AboutSection() {
     Thapar Institute of Engineering & Technology
   </span>{" "}
   (2023–2027) with a strong academic record (CGPA: 9.55).
-  Skilled in AI/ML, embedded systems, and software development,
-  with hands-on experience in EEG-based analysis, cloud systems,
+  Skilled in AI/ML,embedded systems and software development,
+  with hands-on experience in EEG based analysis, cloud systems,
   and computer vision applications. Passionate about building
   intelligent, secure, and scalable real-world solutions.
 </p>

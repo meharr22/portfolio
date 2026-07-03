@@ -22,65 +22,67 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Mind-Wandering vs Focused Detection",
-    tech: "Python, OpenCV, Pandas, MATLAB, EEGLAB, NumPy",
+    title: "Adaptive AI Interview Coach",
+    tech: "Python • FastAPI • React.js • Gemini API • RAG • Sentence Transformers • ChromaDB • SQLite",
     points: [
-      "Classified user attention states using EEG data and probe timestamps.",
-      "Built a pipeline for EEG preprocessing, feature extraction, and temporal labeling.",
+      "Built an AI-powered interview preparation platform using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG).",
+      "Implemented resume parsing, semantic search, skill-gap analysis, AI answer evaluation, and personalized learning roadmap generation.",
+      "Developed RESTful APIs with FastAPI, integrated a React frontend, and managed vector embeddings using ChromaDB.",
     ],
     image: AI_IMG,
   },
+
+  {
+    title: "EEG-Based Mind Wandering Detection",
+    tech: "Python • TensorFlow • Keras • MATLAB • EEGLAB • NumPy • Deep Learning",
+    points: [
+      "Developed a deep learning pipeline to classify Mind Wandering and Focused Attention using multichannel EEG signals.",
+      "Performed EEG preprocessing, ICA artifact removal, feature extraction, channel selection, and spectrogram generation.",
+      "Trained and evaluated CNN-LSTM models to improve cognitive state prediction through optimized feature engineering.",
+    ],
+    image: AI_IMG,
+  },
+
+  {
+    title: "LLM-Based Home Robot",
+    tech: "Python • LLMs • NLP • Prompt Engineering • Agentic AI",
+    points: [
+      "Developed an autonomous home robot capable of understanding and executing natural language instructions.",
+      "Implemented intelligent task planning, object manipulation, navigation, and safety-aware reasoning using LLMs.",
+      "Designed a modular architecture supporting multi-step reasoning and scalable robotic workflows.",
+    ],
+    image: AI_IMG,
+  },
+
+  {
+    title: "LiDAR-Based Mapless Navigation",
+    tech: "Python • Reinforcement Learning • LiDAR • ROS2 • Computer Vision",
+    points: [
+      "Built a mapless autonomous navigation system for real-time obstacle avoidance using LiDAR sensor data.",
+      "Implemented perception and path-planning algorithms for autonomous navigation without prior maps.",
+      "Optimized decision-making for robust navigation in dynamic and unknown environments.",
+    ],
+    image: AI_IMG,
+  },
+
   {
     title: "Secure Cloud Vault",
-    tech: "Python, Flask, AWS S3, Boto3, HTML",
+    tech: "Python • Flask • AWS S3 • Boto3 • SQLite • HTML/CSS",
     points: [
-      "Developed a cloud-based file management system with secure upload, download, and versioning.",
-      "Implemented authentication and session-based access control.",
+      "Developed a secure cloud-based file storage system with authentication and role-based access.",
+      "Implemented encrypted file upload, download, version control, and AWS S3 integration.",
+      "Built REST APIs for secure file management with scalable cloud storage.",
     ],
     image: CODE_IMG,
   },
-  {
-    title: "Movie Booking System",
-    tech: "C++, Data Structures",
-    points: [
-      "Developed a console-based application to manage movie ticket bookings.",
-      "Enabled users to view available shows, select seats, and generate booking details.",
-    ],
-    image: CODE_IMG,
-  },
+
   {
     title: "AI Gesture-Controlled Virtual Whiteboard",
-    tech: "Python, OpenCV, MediaPipe, NumPy",
+    tech: "Python • OpenCV • MediaPipe • NumPy • Computer Vision",
     points: [
-      "Developed a computer vision-based virtual whiteboard for real-time drawing.",
-      "Used hand gestures via webcam eliminating need for physical input devices.",
-    ],
-    image: AI_IMG,
-  },
-  {
-    title: "Smart Book Recommendation System",
-    tech: "Python, Scikit-learn, Streamlit",
-    points: [
-      "Engineered a hybrid recommendation engine using textual similarity and user ratings.",
-      "Delivered personalized book suggestions through an interactive app.",
-    ],
-    image: AI_IMG,
-  },
-  {
-    title: "ATM Management System",
-    tech: "C++, Data Structures",
-    points: [
-      "Developed a console-based ATM system for banking operations.",
-      "Included balance inquiry, cash withdrawal, deposit, and transaction history.",
-    ],
-    image: CODE_IMG,
-  },
-  {
-    title: "Fake News Detection System",
-    tech: "Python, Scikit-learn, Streamlit",
-    points: [
-      "Built and deployed an NLP-based model using TF-IDF and ML algorithms.",
-      "Classified news articles as real or fake using machine learning.",
+      "Developed a real-time virtual whiteboard using hand gesture recognition.",
+      "Implemented finger tracking and gesture detection using OpenCV and MediaPipe.",
+      "Enabled touchless drawing and interaction through computer vision techniques.",
     ],
     image: AI_IMG,
   },
@@ -134,185 +136,148 @@ export default function ProjectsSection() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="py-24 px-6 bg-secondary/30">
-        <div className="max-w-3xl mx-auto">
-          <ScrollFadeIn>
-            <SectionTitle title="Experience" />
-          </ScrollFadeIn>
+<section id="experience" className="py-24 px-6 bg-secondary/30">
+  <div className="max-w-3xl mx-auto">
+    <ScrollFadeIn>
+      <SectionTitle title="Experience" />
+    </ScrollFadeIn>
 
-          {/* AI Intern */}
-          <ScrollFadeIn delay={150}>
-            <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
-                  <Briefcase className="w-6 h-6" />
-                </div>
-
-                <div className="w-full">
-                  <div className="flex justify-between mb-2">
-                    <h3 className="font-serif font-bold text-lg">AI Intern</h3>
-                    <span className="text-xs text-accent">June 2025 – July 2025</span>
-                  </div>
-
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Experiential Learning Centre, TIET
-                  </p>
-
-                  <ul className="space-y-2">
-                    <li className="text-sm text-muted-foreground flex gap-2">
-                      <span>•</span>
-                      <span>Worked on EEG-based mind-wandering detection.</span>
-                    </li>
-                    <li className="text-sm text-muted-foreground flex gap-2">
-                      <span>•</span>
-                      <span>Built CNN-LSTM model using TensorFlow & Keras.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </ScrollFadeIn>
-
-          {/* Virtual Intern */}
-          <ScrollFadeIn delay={250}>
-            <div className="bg-card border border-border rounded-lg p-6 mt-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
-                  <Briefcase className="w-6 h-6" />
-                </div>
-
-                <div className="w-full">
-                  <div className="flex justify-between mb-2">
-                    <h3 className="font-serif font-bold text-lg">Virtual Intern</h3>
-                    <span className="text-xs text-accent">June 2025 – August 2025</span>
-                  </div>
-
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Cisco Networking Academy – Cybersecurity Program
-                  </p>
-
-                  <ul className="space-y-2">
-                    <li className="text-sm text-muted-foreground flex gap-2">
-                      <span>•</span>
-                      <span>Completed cybersecurity internship with labs.</span>
-                    </li>
-                    <li className="text-sm text-muted-foreground flex gap-2">
-                      <span>•</span>
-                      <span>Learned network security & ethical hacking.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </ScrollFadeIn>
-        </div>
-      </section>
-
-      {/* Achievements */}
-      <section id="achievements" className="py-24 px-6">
-        <div className="max-w-3xl mx-auto">
-          <ScrollFadeIn>
-            <SectionTitle title="Achievements" />
-          </ScrollFadeIn>
-
-          <ScrollFadeIn delay={100}>
-            <div className="bg-card border border-border rounded-lg p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Award className="w-5 h-5 text-accent" />
-                <h3 className="font-serif font-bold text-lg">Achievements</h3>
-              </div>
-
-              <ul className="space-y-3">
-  <li className="text-sm text-muted-foreground flex gap-2">
-    <span className="text-accent mt-0.5 shrink-0">•</span>
-    <span>
-      Ranked 1st in branch during first year; awarded a merit-based scholarship and cash prize.
-    </span>
-  </li>
-
-  <li className="text-sm text-muted-foreground flex gap-2">
-    <span className="text-accent mt-0.5 shrink-0">•</span>
-    <span>
-      Completed Deloitte and Accenture Technology Job Simulations (Forage), gaining experience in software development, problem-solving, and dashboard design.
-    </span>
-  </li>
-
-  <li className="text-sm text-muted-foreground flex gap-2">
-    <span className="text-accent mt-0.5 shrink-0">•</span>
-    <span>
-      Completed Cisco Cybersecurity certifications (Junior Cybersecurity Analyst, Introduction to Cybersecurity), covering network security, threat detection, and risk management.
-    </span>
-  </li>
-
-  <li className="text-sm text-muted-foreground flex gap-2">
-    <span className="text-accent mt-0.5 shrink-0">•</span>
-    <span>
-      Received the Best Paper Award for “EEG-Based Mind Wandering Detection using Deep Learning”.
-    </span>
-  </li>
-
-  <li className="text-sm text-muted-foreground flex gap-2">
-    <span className="text-accent mt-0.5 shrink-0">•</span>
-    <span>
-      Earned the AWS Academy Graduate – Cloud Foundations certification by Amazon Web Services (AWS).
-    </span>
-  </li>
-</ul>
-            </div>
-          </ScrollFadeIn>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="py-16 px-6 border-t border-border">
-        <ScrollFadeIn>
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-4">Get In Touch</h2>
-
-            <div className="flex flex-wrap items-center justify-center gap-6 mb-8">
-  <a
-    href="mailto:mehararora47@gmail.com"
-    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
-  >
-    <Mail className="w-4 h-4" />
-    Email
-  </a>
-
-  <a
-    href="https://www.linkedin.com/in/mehar-arora-mmmm/"
-    target="_blank"
-    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
-  >
-    <Linkedin className="w-4 h-4" />
-    LinkedIn
-  </a>
-
-  <a
-    href="https://github.com/meharr22"
-    target="_blank"
-    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors"
-  >
-    <Github className="w-4 h-4" />
-    GitHub
-  </a>
-
-  <span className="flex items-center gap-2 text-sm text-muted-foreground">
-    <Phone className="w-4 h-4" />
-    +91 93064 70727
-  </span>
-
-  <span className="flex items-center gap-2 text-sm text-muted-foreground">
-    <MapPin className="w-4 h-4" />
-    Karnal, Haryana
-  </span>
-</div>
-
-            <p className="text-xs mt-6">
-              © 2026 Mehar Aroraa
-            </p>
+    {/* Research Intern */}
+    <ScrollFadeIn delay={150}>
+      <div className="bg-card border border-border rounded-lg p-6">
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+            <Briefcase className="w-6 h-6" />
           </div>
-        </ScrollFadeIn>
-      </footer>
-    </>
-  );
-}
+
+          <div className="w-full">
+            <div className="flex justify-between mb-2">
+              <h3 className="font-serif font-bold text-lg">
+                Research Intern
+              </h3>
+              <span className="text-xs text-accent">Ongoing</span>
+            </div>
+
+            <p className="text-sm text-muted-foreground mb-3">
+              Experiential Learning Centre, TIET
+            </p>
+
+            <ul className="space-y-2">
+              <li className="text-sm text-muted-foreground flex gap-2">
+                <span>•</span>
+                <span>
+                  Developing an AR-based Scuba Diving Training System using
+                  Unity and Augmented Reality technologies.
+                </span>
+              </li>
+
+              <li className="text-sm text-muted-foreground flex gap-2">
+                <span>•</span>
+                <span>
+                  Building immersive 3D environments, interactive simulations,
+                  and user interaction modules for realistic training.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </ScrollFadeIn>
+
+    {/* AI Intern */}
+    <ScrollFadeIn delay={250}>
+      <div className="bg-card border border-border rounded-lg p-6 mt-6">
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+            <Briefcase className="w-6 h-6" />
+          </div>
+
+          <div className="w-full">
+            <div className="flex justify-between mb-2">
+              <h3 className="font-serif font-bold text-lg">
+                AI Intern
+              </h3>
+              <span className="text-xs text-accent">
+                June 2025 – July 2025
+              </span>
+            </div>
+
+            <p className="text-sm text-muted-foreground mb-3">
+              Experiential Learning Centre, TIET
+            </p>
+
+            <ul className="space-y-2">
+              <li className="text-sm text-muted-foreground flex gap-2">
+                <span>•</span>
+                <span>
+                  Developed a CNN-LSTM model for EEG-based Mind Wandering
+                  Detection using TensorFlow and Keras.
+                </span>
+              </li>
+
+              <li className="text-sm text-muted-foreground flex gap-2">
+                <span>•</span>
+                <span>
+                  Performed EEG preprocessing, spectrogram generation, feature
+                  extraction, and model evaluation for cognitive state
+                  classification.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </ScrollFadeIn>
+  </div>
+</section>
+{/* Achievements & Certifications */}
+<section id="achievements" className="py-24 px-6">
+  <div className="max-w-3xl mx-auto">
+    <ScrollFadeIn>
+      <SectionTitle title="Achievements & Certifications" />
+    </ScrollFadeIn>
+
+    <ScrollFadeIn delay={100}>
+      <div className="bg-card border border-border rounded-lg p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <Award className="w-5 h-5 text-accent" />
+          <h3 className="font-serif font-bold text-lg">
+            Achievements & Certifications
+          </h3>
+        </div>
+
+        <ul className="space-y-3">
+
+          <li className="text-sm text-muted-foreground flex gap-2">
+            <span className="text-accent mt-0.5 shrink-0">•</span>
+            <span>
+              Ranked <strong>1st</strong> in the Electronics & Computer Engineering branch based on first-year academic performance; awarded a <strong>Merit Scholarship</strong> and <strong>Cash Prize</strong>. Continued receiving Merit Scholarships in subsequent semesters based on academic excellence and CGPA.
+            </span>
+          </li>
+
+          <li className="text-sm text-muted-foreground flex gap-2">
+            <span className="text-accent mt-0.5 shrink-0">•</span>
+            <span>
+              Received the <strong>Best Paper Award</strong> for the research project <em>"EEG-Based Mind Wandering Detection using Deep Learning."</em>
+            </span>
+          </li>
+
+          <li className="text-sm text-muted-foreground flex gap-2">
+            <span className="text-accent mt-0.5 shrink-0">•</span>
+            <span>
+              Certified in <strong>AWS Academy Graduate – Cloud Foundations</strong>, <strong>Introduction to Modern AI (Cisco Networking Academy)</strong>, <strong>Artificial Intelligence Fundamentals (IBM SkillsBuild)</strong>, and <strong>Dynamic Programming Camp (AlgoUniversity)</strong>.
+            </span>
+          </li>
+
+          <li className="text-sm text-muted-foreground flex gap-2">
+            <span className="text-accent mt-0.5 shrink-0">•</span>
+            <span>
+              Completed <strong>Technology Job Simulations</strong> by <strong>Deloitte Australia</strong> and <strong>Accenture</strong> (Forage), gaining hands-on experience in software engineering and problem solving.
+            </span>
+          </li>
+
+        </ul>
+      </div>
+    </ScrollFadeIn>
+  </div>
+</section>

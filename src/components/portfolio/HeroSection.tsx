@@ -34,14 +34,14 @@ export default function HeroSection() {
 </p>
 
 <p className="text-sm text-muted-foreground max-w-lg mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up animation-delay-400">
-  Building intelligent systems, working with EEG data, and developing secure and scalable AI-driven solutions.
+  Building intelligent systems,working with data and developing secure and scalable AI driven solutions.
 </p>
 
 
 
         {/* Contact Links */}
         <div className="flex flex-wrap items-center justify-center gap-6 opacity-0 animate-fade-in-up animation-delay-600">
-          <ContactLink icon={<MapPin className="w-4 h-4" />} text="Karnal, Haryana" />
+          <ContactLink icon={<MapPin className="w-4 h-4" />} text="Karnal,Haryana" />
           <ContactLink icon={<Phone className="w-4 h-4" />} text="+91 93064 70727" />
           <ContactLink
             icon={<Mail className="w-4 h-4" />}

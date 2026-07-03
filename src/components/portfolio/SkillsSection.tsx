@@ -1,5 +1,5 @@
 import { SectionTitle } from "./AboutSection";
-import { Code, Brain, Wrench, BarChart3 } from "lucide-react";
+import { Code, Brain, Database, Wrench } from "lucide-react";
 import ScrollFadeIn from "@/components/ScrollFadeIn";
 
 interface SkillCategory {
@@ -10,24 +10,59 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Programming",
+    title: "Programming Languages",
     icon: <Code className="w-5 h-5" />,
-    skills: ["C", "C++", "Python", "JavaScript", "Verilog"],
+    skills: [
+      "C++",
+      "Python",
+      "C",
+      "SQL",
+      "JavaScript",
+    ],
   },
   {
-    title: "AI / ML & Data Science",
+    title: "AI / Machine Learning",
     icon: <Brain className="w-5 h-5" />,
-    skills: ["Scikit-Learn", "TensorFlow", "Keras", "Pandas", "NumPy", "Matplotlib"],
+    skills: [
+      "TensorFlow",
+      "Keras",
+      "Scikit-learn",
+      "OpenCV",
+      "NLP",
+      "LLMs",
+      "RAG",
+      "Sentence Transformers",
+      "Prompt Engineering",
+    ],
+  },
+  {
+    title: "Web & Databases",
+    icon: <Database className="w-5 h-5" />,
+    skills: [
+      "React.js",
+      "FastAPI",
+      "Flask",
+      "HTML",
+      "CSS",
+      "REST APIs",
+      "MySQL",
+      "SQLite",
+      "ChromaDB",
+    ],
   },
   {
     title: "Tools & Platforms",
     icon: <Wrench className="w-5 h-5" />,
-    skills: ["MATLAB", "Xilinx Vivado", "Multisim", "LTSpice", "Arduino", "ARM"],
-  },
-  {
-    title: "Development",
-    icon: <BarChart3 className="w-5 h-5" />,
-    skills: ["VS Code", "Eagle", "Dev-C++", "HTML", "CSS"],
+    skills: [
+      "Git",
+      "GitHub",
+      "AWS S3",
+      "VS Code",
+      "Postman",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+    ],
   },
 ];
 
@@ -43,10 +78,12 @@ export default function SkillsSection() {
           {skillCategories.map((category, index) => (
             <ScrollFadeIn key={index} delay={index * 100}>
               <div className="bg-card border border-border rounded-lg p-6 hover:shadow-md transition-all duration-300 group">
+
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300">
                     {category.icon}
                   </div>
+
                   <h3 className="font-serif font-bold text-foreground text-lg">
                     {category.title}
                   </h3>
@@ -62,6 +99,7 @@ export default function SkillsSection() {
                     </span>
                   ))}
                 </div>
+
               </div>
             </ScrollFadeIn>
           ))}
